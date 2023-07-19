@@ -50,6 +50,7 @@ p {
     position: fixed;
     top: 0;
     border-bottom: 1px var(--verde) solid;
+    z-index: 120;
 }
 
 /*LOGO IMAGEN*/
@@ -157,7 +158,6 @@ label i {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5em;
-    /* border: 1px var(--verde) solid; */
 }
 
 #icons-skills {
@@ -167,16 +167,24 @@ label i {
     justify-content: space-evenly;
     align-self: self-start;    
     color: var(--verde);
-    margin: .5em;
-    /*hay que usar grid*/
+    margin-top: 2em;
 }
 
 
 #icons-skills i {
     font-size: 2.5em;
-    margin: 30px;
+    margin: 20px;
+    display: inline-block;
+    width: 60px;
+    height: 61px;
+    text-align: center;
+    transition: font-size .8s
 }
 
+
+#icons-skills i:hover {
+    font-size: 3.5em;
+}
 
 /*projects */
 
@@ -191,11 +199,19 @@ label i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3em;
 }
 
 .projects-card {
     margin-bottom: 3em;
     width: 260px;
     height: 20em;
-    border: 2px var(--verde) solid;
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(5px);
+}
+
+.projects-card:hover {
+    box-shadow: 0 0 20px rgba(23, 224, 114, 0.829);
 }
