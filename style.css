@@ -203,15 +203,46 @@ label i {
 }
 
 .projects-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 3em;
-    width: 260px;
+    width: 230px;
     height: 20em;
-    border: none;
+    border-top: 1px solid var(--verde);
+    border-left: 1px solid var(--verde);
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.055);
+    /* background: rgba(255, 255, 255, 0.055); */
     backdrop-filter: blur(5px);
+    padding: 18px;
+    box-shadow: 20px 20px 50px #0d3121
+    /* color: var(--verde); */
 }
 
-.projects-card:hover {
-    box-shadow: 0 0 20px rgba(23, 224, 114, 0.829);
+
+
+.container-icons {
+    margin-top: 20px;
 }
+
+.container-text h4 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container-text p {
+    font-size: 1.2em;
+    letter-spacing: 1.2px;
+}
+
+
+.container-icons i {
+    font-size: 1.8em;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
