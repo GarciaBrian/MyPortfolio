@@ -25,6 +25,7 @@ h3 {
     letter-spacing: 1px;
     margin-top: .5em;
     margin-bottom: .5em;
+    color: var(--verde)
 }
 
 a {
@@ -205,38 +206,41 @@ label i {
 .projects-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 3em;
     width: 230px;
     height: 20em;
-    border-top: 1px solid var(--verde);
-    border-left: 1px solid var(--verde);
-    border-radius: 15px;
+    background-color: #111;
+    /* border-top: 1px solid var(--verde);
+    border-left: 1px solid var(--verde); */
+    border-radius: 10px;
     /* background: rgba(255, 255, 255, 0.055); */
     backdrop-filter: blur(5px);
-    padding: 18px;
-    box-shadow: 20px 20px 50px #0d3121
+    /* padding: 18px; */
+    /* box-shadow: 20px 20px 50px #0d3121 */
     /* color: var(--verde); */
+    transition: all  .8s
 }
 
-
-
-.container-icons {
-    margin-top: 20px;
+.projects-card:hover {
+    transform: translateY(-5%);
 }
+
 
 .container-text h4 {
-    font-size: 2.5em;
-    margin-bottom: 5px;
+    font-size: 2em;
+    margin-bottom: 1em;
     letter-spacing: 2px;
     font-weight: bolder;
     text-align: center;
+    border-bottom: 1px solid;
 }
 
 .container-text p {
-    font-size: 1.2em;
+    font-size: 1em;
     letter-spacing: 1.2px;
+    font-weight: bolder;
 }
 
 
