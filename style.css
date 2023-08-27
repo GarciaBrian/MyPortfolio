@@ -250,3 +250,38 @@ label i {
     margin-right: 10px;
 }
 
+
+footer {
+    height: 200px;
+    border-top: 1px var(--verde) solid;
+    margin: 1em;
+}
+
+.contact {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 1.7px;
+}
+
+#ul-icons-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1.2rem;
+}
+
+.links {
+    color: #fff;
+    cursor: pointer;
+}
+
+.links i{
+    font-size: 32px;
+    transition: all  .7s;
+}
+
+.links i:hover {
+    color: var(--verde);
+    transform: translateY(-25%);
+}
